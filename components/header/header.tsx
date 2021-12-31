@@ -1,7 +1,6 @@
-/* This example requires Tailwind CSS v2.0+ */
 import {Fragment} from 'react'
 import {Popover, Transition} from '@headlessui/react'
-import image from "../../assests/img/threedots.svg"
+const image =  require("../../assests/img/threedots.jpg")
 import {
     BookmarkAltIcon,
     CalendarIcon,
@@ -16,8 +15,6 @@ import {
     ViewGridIcon,
     XIcon,
 } from '@heroicons/react/outline'
-import {ChevronDownIcon} from '@heroicons/react/solid'
-
 const solutions = [
     {
         name: 'Analytics',
@@ -82,14 +79,14 @@ function classNames(...classes: any) {
 
 export default function Header() {
     return (
-        <Popover className="relative bg-dark-header/[.18] rounded border border-light-border ">
+        <Popover className="relative bg-dark-header/[.18] rounded border border-light-border">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div
-                    className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                    className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#">
                             <span className="sr-only">Workflow</span>
-                            <img className="h-8 w-auto sm:h-10"
+                            <img className="h-4 w-auto sm:h-5"
                                 src={image}
                                 alt="alt"
                             />
@@ -104,35 +101,29 @@ export default function Header() {
                     </div>
                     <Popover.Group as="nav" className="hidden md:flex space-x-10">
 
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-400">
                             Main
                         </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-400">
                             About
                         </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-400">
                             Designs
                         </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-400">
                             Projects
                         </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-400">
                             Contact
                         </a>
 
 
                     </Popover.Group>
                     <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                        <a href="#"
-                           className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                            Sign in
-                        </a>
-                        <a
-                            href="#"
-                            className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                        >
-                            Sign up
-                        </a>
+                        <button
+                            className="bg-transparent hover:bg-purple-500/[.5] text-gray-400 bg-purple-500/[.10] font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded">
+                            Download CV
+                        </button>
                     </div>
                 </div>
             </div>
