@@ -1,6 +1,6 @@
 import {Fragment} from 'react'
 import {Popover, Transition} from '@headlessui/react'
-const image =  require("../../assests/img/threedots.jpg")
+import image from "../../assists/img/threedots.svg"
 import {
     BookmarkAltIcon,
     CalendarIcon,
