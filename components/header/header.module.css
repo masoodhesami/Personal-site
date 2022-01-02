@@ -1,0 +1,88 @@
+.mainHeader {
+    @apply relative bg-dark-header/[.18]  border-b border-light-border
+}
+
+.headerSetting {
+    @apply max-w-7xl mx-auto px-4 sm:px-6
+}
+
+.headerItems {
+    @apply flex justify-between items-center py-2 md:justify-start md:space-x-10
+}
+
+.itemsFlex {
+    @apply flex justify-start lg:w-0 lg:flex-1
+}
+
+.logoImage {
+    @apply relative h-5 w-8 sm:h-5 -top-2
+}
+
+.popoverDisplay {
+    @apply -mr-2 -my-2 md:hidden
+}
+
+.popoverSetting {
+    @apply rounded-md p-2 inline-flex items-center justify-center text-gray-400
+    hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500
+}
+
+.popoverGroup {
+    @apply hidden md:flex space-x-10
+}
+
+.popoverGroupItems {
+    @apply text-base font-medium text-gray-500 hover:text-gray-300
+}
+
+.CVBtnDisplay {
+    @apply hidden md:flex items-center justify-end md:flex-1 lg:w-0
+}
+
+.CVBtnStyle {
+    @apply h-10 px-5 text-sm bg-transparent hover:bg-purple-500/[.5] text-gray-400
+    bg-purple-500/[.10] font-semibold hover:text-white py-2 px-4 border border-purple-500
+    hover:border-transparent rounded
+}
+
+.popoverPanelDisplay {
+    @apply absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden
+}
+
+.popoverPanelSetting {
+    @apply rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-dark-background
+    divide-y-2 divide-light-border
+}
+
+.popoverPanelFlex {
+    @apply flex items-center justify-between
+}
+
+.popoverCloseBtn {
+    @apply bg-dark-background rounded-md p-2 inline-flex items-center justify-center
+    text-gray-400 hover:text-gray-500 hover:bg-dark-header focus:outline-none focus:ring-2
+    focus:ring-inset focus:ring-purple-500
+}
+
+.navGrid {
+    @apply grid gap-y-8
+}
+
+.popoverPanelItems {
+    @apply -m-3 p-3 flex items-center rounded-md hover:bg-dark-header
+}
+
+.popoverPanelIcons {
+    @apply flex-shrink-0 h-6 w-6 text-purple-500/[.6]
+}
+
+.popoverPanelTexts {
+    @apply ml-3 text-base font-medium text-gray-400
+}
+
+.fullCVBtn {
+    @apply w-full flex items-center
+    justify-center h-10 px-5 text-sm bg-transparent hover:bg-purple-500/[.5]
+    text-gray-400 bg-purple-500/[.10] font-semibold hover:text-white py-2 px-4
+    border border-purple-500 hover:border-transparent rounded
+}

@@ -1,88 +1,90 @@
 import {Fragment} from 'react'
 import {Popover, Transition} from '@headlessui/react'
 import image from "../../assists/img/threedots.svg"
+import styles from "./header.module.css"
 import {
-    ChartBarIcon,
-    CursorClickIcon,
     MenuIcon,
-    RefreshIcon,
-    ShieldCheckIcon,
-    ViewGridIcon,
     XIcon,
+    HomeIcon,
+    CodeIcon,
+    LightBulbIcon,
+    FingerPrintIcon,
+    MailIcon
 } from '@heroicons/react/outline'
+
 const solutions = [
     {
         name: 'Main',
         description: 'Get a better understanding of where your traffic is coming from.',
         href: '#',
-        icon: ChartBarIcon,
+        icon: HomeIcon,
     },
     {
         name: 'About',
         description: 'Speak directly to your customers in a more meaningful way.',
         href: '#',
-        icon: CursorClickIcon,
+        icon: FingerPrintIcon,
     },
-    {name: 'Designs', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon},
+    {name: 'Designs', description: "Your customers' data will be safe and secure.", href: '#', icon: LightBulbIcon},
     {
         name: 'Projects',
         description: "Connect with third-party tools that you're already using.",
         href: '#',
-        icon: ViewGridIcon,
+        icon: CodeIcon,
     },
     {
         name: 'Contact',
         description: 'Build strategic funnels that will drive your customers to convert',
         href: '#',
-        icon: RefreshIcon,
+        icon: MailIcon,
     },
 ]
 
 export default function Header() {
     return (
-        <Popover className="relative bg-dark-header/[.18]  border-b border-light-border">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <Popover className={styles.mainHeader}>
+            <div className={styles.headerSetting}>
                 <div
-                    className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
-                    <div className="flex justify-start lg:w-0 lg:flex-1">
+                    className={styles.headerItems}>
+                    <div className={styles.itemsFlex}>
                         <a href="#">
                             <span className="sr-only">ThreeDots</span>
-                            <img className=" relative h-5 w-8 sm:h-5 -top-2"
-                                src={image}
-                                alt="ThreeDots"
+                            <img className={styles.logoImage}
+                                 src={image}
+                                 alt="ThreeDots"
                             />
                         </a>
                     </div>
-                    <div className="-mr-2 -my-2 md:hidden">
+                    <div className={styles.popoverDisplay}>
                         <Popover.Button
-                            className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
+                            className={styles.popoverSetting}>
                             <span className="sr-only">Open menu</span>
                             <MenuIcon className="h-6 w-6" aria-hidden="true"/>
                         </Popover.Button>
                     </div>
-                    <Popover.Group as="nav" className="hidden md:flex space-x-10">
+                    <Popover.Group as="nav" className={styles.popoverGroup}>
 
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-300">
+                        <a href="#" className={styles.popoverGroupItems}>
                             Main
                         </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-300">
+                        <a href="#" className={styles.popoverGroupItems}>
                             About
                         </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-300">
+                        <a href="#" className={styles.popoverGroupItems}>
                             Designs
                         </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-300">
+                        <a href="#" className={styles.popoverGroupItems}>
                             Projects
                         </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-300">
+                        <a href="#" className={styles.popoverGroupItems}>
                             Contact
                         </a>
 
 
                     </Popover.Group>
-                    <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                    <div className={styles.CVBtnDisplay}>
                         <button
-                            className="h-10 px-5 text-sm bg-transparent hover:bg-purple-500/[.5] text-gray-400 bg-purple-500/[.10] font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded">
+                            className={styles.CVBtnStyle}>
                             Download CV
                         </button>
                     </div>
@@ -99,11 +101,11 @@ export default function Header() {
                 leaveTo="opacity-0 scale-95"
             >
                 <Popover.Panel focus
-                               className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                               className={styles.popoverPanelDisplay}>
                     <div
-                        className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-dark-background divide-y-2 divide-light-border">
+                        className={styles.popoverPanelSetting}>
                         <div className="pt-5 pb-6 px-5">
-                            <div className="flex items-center justify-between">
+                            <div className={styles.popoverPanelFlex}>
                                 <div>
                                     <img
                                         className="h-5 w-8"
@@ -113,24 +115,24 @@ export default function Header() {
                                 </div>
                                 <div className="-mr-2">
                                     <Popover.Button
-                                        className="bg-dark-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-dark-header focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
+                                        className={styles.popoverCloseBtn}>
                                         <span className="sr-only">Close menu</span>
                                         <XIcon className="h-6 w-6" aria-hidden="true"/>
                                     </Popover.Button>
                                 </div>
                             </div>
                             <div className="mt-6">
-                                <nav className="grid gap-y-8">
+                                <nav className={styles.navGrid}>
                                     {solutions.map((item) => (
                                         <a
                                             key={item.name}
                                             href={item.href}
-                                            className="-m-3 p-3 flex items-center rounded-md hover:bg-dark-header"
+                                            className={styles.popoverPanelItems}
                                         >
-                                            <item.icon className="flex-shrink-0 h-6 w-6 text-purple-600"
+                                            <item.icon className={styles.popoverPanelIcons}
                                                        aria-hidden="true"/>
                                             <span
-                                                className="ml-3 text-base font-medium text-gray-400">{item.name}</span>
+                                                className={styles.popoverPanelTexts}>{item.name}</span>
                                         </a>
                                     ))}
                                 </nav>
@@ -139,7 +141,7 @@ export default function Header() {
                         <div className="py-6 px-5 space-y-6">
                             <div>
                                 <button
-                                    className="w-full flex items-center justify-center h-10 px-5 text-sm bg-transparent hover:bg-purple-500/[.5] text-gray-400 bg-purple-500/[.10] font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded">
+                                    className={styles.fullCVBtn}>
                                     Download CV
                                 </button>
                             </div>
