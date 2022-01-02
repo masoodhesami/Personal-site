@@ -21,13 +21,13 @@
 }
 
 .githubIcon {
-    @apply mx-auto -top-2 relative text-black text-xl
+    @apply mx-auto -top-1.5 relative h-4
 }
 
 .gitlabIcon {
-    @apply mx-auto -top-1.5 relative text-orange text-xl
+    @apply mx-auto -top-1.5 relative h-4
 }
 
 .linkinIcon {
-    @apply mx-auto -top-1.5 relative text-sky-blue text-xl
+    @apply mx-auto -top-1.5 relative h-4
 }
