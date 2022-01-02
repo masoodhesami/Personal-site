@@ -1,0 +1,33 @@
+.btnsDiv {
+    @apply mx-auto text-center mt-7
+}
+
+.githubBtnStyle {
+    @apply h-6 w-16 px-5 text-sm bg-transparent hover:bg-whiteGray/[.17] text-gray-400
+    bg-whiteGray/[.15] font-semibold hover:text-white py-2 px-4 border border-whiteGray
+    rounded mr-2
+}
+
+.gitlabBtnStyle {
+    @apply h-6 w-16 px-5 text-sm bg-transparent hover:bg-fillOrange/[.17] text-gray-400
+    bg-fillOrange/[.15] font-semibold hover:text-white py-2 px-4 border border-orange
+    rounded mr-2
+}
+
+.linkinBtnStyle {
+    @apply h-6 w-16 px-5 text-sm bg-transparent hover:bg-sky-blue/[.17] text-gray-400
+    bg-sky-blue/[.15] font-semibold hover:text-white py-2 px-4 border border-sky-blue
+    rounded mr-2
+}
+
+.githubIcon {
+    @apply mx-auto -top-2 relative text-black text-xl
+}
+
+.gitlabIcon {
+    @apply mx-auto -top-1.5 relative text-orange text-xl
+}
+
+.linkinIcon {
+    @apply mx-auto -top-1.5 relative text-sky-blue text-xl
+}

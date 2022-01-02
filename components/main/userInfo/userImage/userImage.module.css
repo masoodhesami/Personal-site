@@ -1,6 +1,6 @@
 .userDivStyle{
-    width: 110px;
-    height: 110px;
+    width: 95px;
+    height: 95px;
     background-image: url("../../../../assists/img/masoud.svg");
     @apply mx-auto mt-6
 }

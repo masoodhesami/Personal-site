@@ -1,12 +1,12 @@
 import type {NextPage} from 'next'
 import Header from "../components/header/header";
-import UserInfo from "../components/main/userInfo/userInfo";
+import Main from "../components/main/main";
 
 const Home: NextPage = () => {
     return (
         <>
         <Header/>
-        <UserInfo/>
+        <Main/>
         </>
     )
 }
