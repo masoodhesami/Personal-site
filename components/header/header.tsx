@@ -65,19 +65,19 @@ export default function Header() {
                     <Popover.Group as="nav" className={styles.popoverGroup}>
 
                         <a href="#" className={styles.popoverGroupItems}>
-                            Main
+                            {"<Main/>"}
                         </a>
                         <a href="#" className={styles.popoverGroupItems}>
-                            About
+                            {"<About/>"}
                         </a>
                         <a href="#" className={styles.popoverGroupItems}>
-                            Designs
+                            {"<Designs/>"}
                         </a>
                         <a href="#" className={styles.popoverGroupItems}>
-                            Projects
+                            {"<Projects/>"}
                         </a>
                         <a href="#" className={styles.popoverGroupItems}>
-                            Contact
+                            {"<Contact/>"}
                         </a>
 
 

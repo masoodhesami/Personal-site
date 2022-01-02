@@ -28,7 +28,7 @@
 }
 
 .popoverGroup {
-    @apply hidden md:flex space-x-10
+    @apply hidden md:flex space-x-10 lg:space-x-10 sm:space-x-5
 }
 
 .popoverGroupItems {
