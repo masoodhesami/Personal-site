@@ -15,7 +15,7 @@
 }
 
 .logoImage {
-    @apply relative h-5 w-8 sm:h-5 -top-2
+    @apply  h-5 w-8 sm:h-5
 }
 
 .popoverDisplay {

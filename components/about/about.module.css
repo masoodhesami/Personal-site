@@ -1,0 +1,32 @@
+.aboutImage{
+    width: 119px;
+    height: 110px;
+    background-image: url("../../assists/img/about.svg");
+    @apply mx-auto mt-24
+}
+.aboutText{
+    @apply mx-auto text-whiteGray/[.83] mb-3 mt-12 w-7/12 text-left
+}
+.AtomOrange {
+    @apply text-atomOrange
+}
+
+.AtomBrown {
+    @apply text-atomBrown
+}
+
+.AtomGreen {
+    @apply text-atomGreen
+}
+
+.AtomBlue {
+    @apply text-atomBlue
+}
+
+.AtomRed {
+    @apply text-atomRed
+}
+
+.AtomPurple {
+    @apply text-atomPurple
+}
