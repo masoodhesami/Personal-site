@@ -1,0 +1,12 @@
+.designsImgStyle{
+    width: 114px;
+    height: 110px;
+    background-image: url("../../assists/img/designs.svg");
+    @apply mx-auto mt-20
+}
+.designTemplatesGrid{
+    @apply grid lg:grid-cols-2 lg:w-2/3 mt-12 gap-4 justify-items-center mx-auto sm:grid-cols-1 mb-8
+}
+.designImages {
+    @apply w-11/12 mx-auto lg:w-full rounded-md border-l-4 border-indigo-600 hover:border-x-4 hover:shadow-md hover:shadow-indigo-600/[.5]
+}

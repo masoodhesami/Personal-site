@@ -1,11 +1,11 @@
-.aboutImage{
+.aboutImageStyle{
     width: 119px;
     height: 110px;
     background-image: url("../../assists/img/about.svg");
     @apply mx-auto mt-24
 }
 .aboutText{
-    @apply mx-auto text-whiteGray/[.83] mb-3 mt-12 w-7/12 text-left
+    @apply text-left xl:w-7/12  mx-auto text-whiteGray/[.83] mt-12 px-2
 }
 .AtomOrange {
     @apply text-atomOrange
