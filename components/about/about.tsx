@@ -5,8 +5,8 @@ import AboutText from "./aboutText";
 const About = () => {
     return (
         <>
-            <AboutImg/>
-            <AboutText/>
+                <AboutImg/>
+                <AboutText/>
         </>
     );
 };

@@ -8,7 +8,7 @@ import linkedin from "../../../assists/img/LinkedIn_logo_initials.svg"
 const LinkBtns = () => {
     return (
         <>
-            <div className={styles.btnsDiv}>
+            <div className={styles.btnsDiv} id={'about'}>
                 <button
                     className={styles.githubBtnStyle}>
                     <img className={styles.githubIcon} src={github} alt="github"/>

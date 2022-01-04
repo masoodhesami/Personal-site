@@ -67,10 +67,10 @@ export default function Header() {
                         <a href="#" className={`${styles.popoverGroupItems } ${styles.popoverItemsActive}`}>
                             {"Main"}
                         </a>
-                        <a href="#" className={styles.popoverGroupItems}>
+                        <a onClick={() => window.location.replace("/#about")} className={styles.popoverGroupItems}>
                             {"About"}
                         </a>
-                        <a href="#" className={styles.popoverGroupItems}>
+                        <a onClick={() => window.location.replace("/#designs")} className={styles.popoverGroupItems}>
                             {"Designs"}
                         </a>
                         <a href="#" className={styles.popoverGroupItems}>
