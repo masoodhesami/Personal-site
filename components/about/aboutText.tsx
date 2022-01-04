@@ -11,7 +11,7 @@ const AboutText = () => {
                 className={styles.AtomOrange}> 2020 </span>
                 and later became interested in <span className={styles.AtomRed}> JavaScript</span>. And from there, my
                 career as a <span className={styles.AtomBlue}>Front-end
-            developer</span> began with learning <span className={styles.AtomBlue}> React </span> . I'm a <span
+            developer</span> began with learning <span className={styles.AtomBlue}> React </span> . Im a <span
                 className={styles.AtomGreen}> student </span> of computer engineering and I
                 am interested in working in <span className={styles.AtomPurple}> ux </span> & <span
                 className={styles.AtomPurple}> ui </span> design & <span
