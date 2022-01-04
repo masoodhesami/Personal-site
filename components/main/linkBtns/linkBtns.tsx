@@ -11,17 +11,14 @@ const LinkBtns = () => {
             <div className={styles.btnsDiv}>
                 <button
                     className={styles.githubBtnStyle}>
-                    {/*<AiFillGithub className={styles.githubIcon}/>*/}
                     <img className={styles.githubIcon} src={github} alt="github"/>
                 </button>
                 <button
                     className={styles.gitlabBtnStyle}>
-                    {/*<AiFillGitlab className={styles.gitlabIcon}/>*/}
                     <img className={styles.gitlabIcon} src={gitlab} alt="github"/>
                 </button>
                 <button
                     className={styles.linkinBtnStyle}>
-                    {/*<AiFillLinkedin className={styles.linkinIcon}/>*/}
                     <img className={styles.linkinIcon} src={linkedin} alt="github"/>
                 </button>
             </div>
