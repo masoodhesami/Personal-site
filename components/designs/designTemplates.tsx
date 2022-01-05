@@ -5,9 +5,9 @@ import design2 from "../../assists/img/personal-design.svg"
 import design3 from "../../assists/img/shoes-design.svg"
 import design4 from "../../assists/img/rightel-design.svg"
 import design5 from "../../assists/img/landing.svg"
-import arrow from "../../assists/img/down-arrow.svg"
+import { ChevronDownIcon } from '@heroicons/react/outline'
 
-const allDesigns = [design5, design5, design5, design5]
+const allDesigns = [design1, design2, design3, design4]
 const DesignTemplates = () => {
     return (
         <>
@@ -21,7 +21,7 @@ const DesignTemplates = () => {
             <div className={styles.divFlexCenter}>
                 <button className={styles.moreBtn}>
                     <span>More</span>
-                    <img className={styles.btnArrow} src={arrow} alt="arrow"/>
+                    <ChevronDownIcon className={styles.btnArrow}/>
                 </button>
             </div>
 
