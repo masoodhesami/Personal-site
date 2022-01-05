@@ -1,6 +1,6 @@
 import {Fragment} from 'react'
 import {Popover, Transition} from '@headlessui/react'
-import image from "../../assists/img/threedots.svg"
+import image from "../../public/threedots.svg"
 import styles from "./header.module.css"
 import {
     MenuIcon,

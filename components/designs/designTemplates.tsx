@@ -1,20 +1,16 @@
 import React from 'react';
 import styles from "./designs.module.css"
-import design1 from "../../assists/img/landing-design.svg"
-import design2 from "../../assists/img/personal-design.svg"
-import design3 from "../../assists/img/shoes-design.svg"
-import design4 from "../../assists/img/rightel-design.svg"
-import design5 from "../../assists/img/landing.svg"
+import Image from 'next/image'
 import { ChevronDownIcon } from '@heroicons/react/outline'
 
-const allDesigns = [design1, design2, design3, design4]
+const allDesigns = ['landing-design.svg','personal-design.svg','shoes-design.svg','rightel-design.svg']
 const DesignTemplates = () => {
     return (
         <>
             <div className={styles.designTemplatesGrid}>
                 {allDesigns.map(design =>
                     <div key={design}>
-                        <img className={styles.designImages} src={design} alt="designs"/>
+                        <Image className={styles.designImages} width={380} height={200}  src={`/${design}`} alt="designs"/>
                     </div>
                 )}
             </div>
@@ -24,7 +20,6 @@ const DesignTemplates = () => {
                     <ChevronDownIcon className={styles.btnArrow}/>
                 </button>
             </div>
-
         </>
     );
 };

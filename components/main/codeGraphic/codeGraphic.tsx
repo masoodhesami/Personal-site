@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./codeGraphic.module.css"
-import image from "../../../assists/img/mainGraphic.svg"
+import image from "../../../public/mainGraphic.svg"
 const CodeGraphic = () => {
     return (
         <img className={styles.codeImgStyle} src={image} alt="alt"/>
