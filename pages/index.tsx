@@ -3,7 +3,7 @@ import Header from "../components/header/header";
 import Main from "../components/main/main";
 import About from "../components/about/about";
 import Designs from "../components/designs/designs";
-import Card from "../components/projects/project-card/card";
+import Projects from "../components/projects/projects";
 
 const Home: NextPage = () => {
     return (
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
             <Main/>
             <About/>
             <Designs/>
-            <Card/>
+            <Projects/>
         </>
     )
 }

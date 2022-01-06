@@ -1,0 +1,26 @@
+.cardStyle{
+  @apply  max-w-sm bg-cardBackground rounded-md shadow-md
+}
+.cardImageStyle{
+    @apply rounded-md
+}
+.cardTitleStyle{
+    @apply mb-2 text-center text-2xl font-bold tracking-tight text-cardTitle
+}
+.cardBorderStyle{
+    @apply border-t border-purple-600 w-52 mx-auto mt-2
+}
+
+.cardPurpleLine{
+    @apply mx-auto relative -top-16
+}
+.techStyle{
+    @apply mb-4 font-normal text-cardTitle/[.83] mt-8
+}
+.AtomGreen {
+    @apply text-atomGreen
+}
+
+.AtomBlue {
+    @apply text-atomBlue
+}
