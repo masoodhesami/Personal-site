@@ -8,11 +8,11 @@ const DesignTemplates = () => {
     return (
         <>
             <div className={styles.designTemplatesGrid}>
-                {allDesigns.map(design =>
-                    <div key={design}>
-                        <Image className={styles.designImages} width={380} height={200}  src={`/${design}`} alt="designs"/>
-                    </div>
-                )}
+                {/*{allDesigns.map(design =>*/}
+                {/*    <div key={design}>*/}
+                {/*        <Image className={styles.designImages} width={380} height={200}  src={`/${design}`} alt="designs"/>*/}
+                {/*    </div>*/}
+                {/*)}*/}
             </div>
             <div className={styles.divFlexCenter}>
                 <button className={styles.moreBtn}>

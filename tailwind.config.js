@@ -28,7 +28,9 @@ module.exports = {
                 'atomRed':'#EE4C4A',
                 'atomBlue':'#6FC7E8',
                 'atomPurple':'#B997FA',
-                'orangeBorder':'#FF4C00'
+                'orangeBorder':'#FF4C00',
+                'cardBackground':'#1D1E22',
+                'cardTitle':'#D0CDCD',
             },
         },
     },
