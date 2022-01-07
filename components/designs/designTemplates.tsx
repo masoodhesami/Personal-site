@@ -3,7 +3,7 @@ import styles from "./designs.module.css"
 import Image from 'next/image'
 import { ChevronDownIcon } from '@heroicons/react/outline'
 
-const allDesigns = ['landing-design.svg','landing-design.svg','landing-design.svg','landing-design.svg']
+const allDesigns = ['landing-w-border.svg','landing-w-border.svg','landing-w-border.svg','landing-w-border.svg']
 const DesignTemplates = () => {
     return (
         <>
@@ -15,7 +15,7 @@ const DesignTemplates = () => {
                 )}
             </div>
             <div className={styles.divFlexCenter}>
-                <button className={styles.moreBtn}>
+                <button id={'projects'} className={styles.moreBtn}>
                     <span>More</span>
                     <ChevronDownIcon className={styles.btnArrow}/>
                 </button>

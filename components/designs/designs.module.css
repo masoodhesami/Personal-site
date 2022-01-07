@@ -6,7 +6,7 @@
 }
 
 .designTemplatesGrid {
-    @apply grid lg:grid-cols-2 lg:w-2/3 gap-4 mt-12 gap-6 justify-items-center mx-auto sm:grid-cols-1 mb-8
+    @apply grid lg:grid-cols-2 lg:w-2/3  mt-12  justify-items-center mx-auto sm:grid-cols-1 mb-8
 }
 
 .designImages {

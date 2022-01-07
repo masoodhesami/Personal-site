@@ -1,3 +1,44 @@
 .projectsGrid{
-    @apply grid lg:grid-cols-2 lg:w-2/3 mt-16 gap-6 justify-items-center mx-auto sm:grid-cols-1 mb-8
+    @apply grid lg:grid-cols-2 lg:w-2/3 mt-16 gap-8 justify-items-center mx-auto sm:grid-cols-1 mb-8
+}
+.cardStyle{
+    @apply  max-w-sm bg-cardBackground rounded-md shadow-md
+}
+.cardImageStyle{
+    @apply rounded-md
+}
+.cardTitleStyle{
+    @apply mb-2 text-center text-xl font-bold tracking-tight text-cardTitle
+    hover:text-xl hover:text-purple-400/[.8]
+}
+.cardBorderStyle{
+    @apply border-t border-purple-600 w-52 mx-auto mt-2
+}
+
+.cardPurpleLine{
+    @apply mx-auto relative -top-16
+}
+.techStyle{
+    @apply mb-4 font-normal text-cardTitle/[.83] mt-8
+}
+.AtomGreen {
+    @apply text-atomGreen
+}
+
+.AtomBlue {
+    @apply text-atomBlue
+}
+.projectImgStyle{
+    width: 121px;
+    height: 110px;
+    background-image: url("../../public/projects.svg");
+    @apply mx-auto mt-20
+}
+.cardDetails{
+    @apply text-cardTitle/[.2] mt-2 mx-auto text-center text-sm
+}
+.projectMoreBtn{
+    @apply h-9 w-28 px-5 text-sm bg-transparent hover:bg-purple-600/[.17] text-gray-400
+    bg-purple-600/[.15] font-semibold hover:text-white py-2 px-4 border border-purple-600
+    rounded mb-12 mx-auto
 }

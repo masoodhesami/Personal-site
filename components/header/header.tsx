@@ -22,20 +22,20 @@ const solutions = [
     {
         name: 'About',
         description: 'Speak directly to your customers in a more meaningful way.',
-        href: '#',
+        href: '#about',
         icon: FingerPrintIcon,
     },
-    {name: 'Designs', description: "Your customers' data will be safe and secure.", href: '#', icon: LightBulbIcon},
+    {name: 'Designs', description: "Your customers' data will be safe and secure.", href: '#designs', icon: LightBulbIcon},
     {
         name: 'Projects',
         description: "Connect with third-party tools that you're already using.",
-        href: '#',
+        href: '#projects',
         icon: CodeIcon,
     },
     {
         name: 'Contact',
         description: 'Build strategic funnels that will drive your customers to convert',
-        href: '#',
+        href: '#contact',
         icon: MailIcon,
     },
 ]
@@ -73,7 +73,7 @@ export default function Header() {
                         <a onClick={() => window.location.replace("/#designs")} className={styles.popoverGroupItems}>
                             {"Designs"}
                         </a>
-                        <a href="#" className={styles.popoverGroupItems}>
+                        <a onClick={() => window.location.replace("/#projects")} className={styles.popoverGroupItems}>
                             {"Projects"}
                         </a>
                         <a href="#" className={styles.popoverGroupItems}>
@@ -124,8 +124,8 @@ export default function Header() {
                             <div className="mt-6">
                                 <nav className={styles.navGrid}>
                                     {solutions.map((item) => (
-                                        <a
-                                            key={item.name}
+                                        <a onClick={() => window.location.replace(`/${item.href}`)}
+                                           key={item.name}
                                             href={item.href}
                                             className={styles.popoverPanelItems}
                                         >

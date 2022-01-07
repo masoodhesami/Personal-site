@@ -1,15 +1,23 @@
 import React from 'react';
 import styles from "./projects.module.css"
-import Card from "./project-card/card";
+import Card from "./card";
+import ProjectImg from "./projectImg";
+import ProjectMoreBtn from "./projectMoreBtn";
 
 const Projects = () => {
     return (
-        <div className={styles.projectsGrid}>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-        </div>
+        <>
+            <ProjectImg/>
+            <div className={styles.projectsGrid}>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <ProjectMoreBtn/>
+            </div>
+        </>
     );
 };
 
