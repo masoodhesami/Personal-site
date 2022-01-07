@@ -15,8 +15,8 @@ const Projects = () => {
                 <Card/>
                 <Card/>
                 <Card/>
-                <ProjectMoreBtn/>
             </div>
+            <ProjectMoreBtn/>
         </>
     );
 };

@@ -1,0 +1,6 @@
+.footerStyle{
+    @apply max-w-7xl bg-footerColor/[.18] h-10
+}
+.footerTextStyle{
+    @apply text-sm text-whiteGray/[.83] text-center pt-2
+}

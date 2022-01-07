@@ -4,6 +4,7 @@ import Main from "../components/main/main";
 import About from "../components/about/about";
 import Designs from "../components/designs/designs";
 import Projects from "../components/projects/projects";
+import Footer from "../components/footer/footer";
 
 const Home: NextPage = () => {
     return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
             <About/>
             <Designs/>
             <Projects/>
+            <Footer/>
         </>
     )
 }

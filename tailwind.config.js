@@ -31,6 +31,7 @@ module.exports = {
                 'orangeBorder':'#FF4C00',
                 'cardBackground':'#1D1E22',
                 'cardTitle':'#D0CDCD',
+                'footerColor':'#3C3E41'
             },
         },
     },

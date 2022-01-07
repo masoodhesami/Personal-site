@@ -5,10 +5,12 @@ import {ChevronDownIcon} from "@heroicons/react/outline";
 
 const ProjectMoreBtn = () => {
     return (
-        <button id={'contact'} className={projectStyles.projectMoreBtn}>
-            <span>More</span>
-            <ChevronDownIcon className={designStyles.btnArrow}/>
-        </button>
+        <div className={designStyles.divFlexCenter}>
+            <button id={'contact'} className={projectStyles.projectMoreBtn}>
+                <span>More</span>
+                <ChevronDownIcon className={designStyles.btnArrow}/>
+            </button>
+        </div>
     );
 };
 
