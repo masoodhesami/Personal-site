@@ -1,6 +1,11 @@
-.footerStyle{
-    @apply max-w-7xl bg-footerColor/[.18] h-10
+.footerStyle {
+    @apply max-w-7xl bg-footerColor/[.18] h-10 items-center border-t-2 border-light-border mt-8
 }
-.footerTextStyle{
+
+.footerTextStyle {
     @apply text-sm text-whiteGray/[.83] text-center pt-2
+}
+
+.AtomBlue {
+    @apply text-atomBlue
 }

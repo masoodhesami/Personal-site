@@ -1,17 +1,14 @@
-import {Fragment} from 'react'
+import {Fragment, useState} from 'react'
 import {Popover, Transition} from '@headlessui/react'
 import image from "../../public/threedots.svg"
 import styles from "./header.module.css"
-import {
-    MenuIcon,
-    XIcon,
-    HomeIcon,
-    CodeIcon,
-    LightBulbIcon,
-    FingerPrintIcon,
-    MailIcon
-} from '@heroicons/react/outline'
+import {CodeIcon, FingerPrintIcon, HomeIcon, LightBulbIcon, MailIcon, MenuIcon, XIcon} from '@heroicons/react/outline'
 
+// const [active , setActive] =useState(false)
+// const toggleClass = () => {
+//     // @ts-ignore
+//     setActive({ active: !active });
+// };
 const solutions = [
     {
         name: 'Main',
@@ -63,7 +60,6 @@ export default function Header() {
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className={styles.popoverGroup}>
-
                         <a href="#" className={`${styles.popoverGroupItems } ${styles.popoverItemsActive}`}>
                             {"Main"}
                         </a>
@@ -76,7 +72,7 @@ export default function Header() {
                         <a onClick={() => window.location.replace("/#projects")} className={styles.popoverGroupItems}>
                             {"Projects"}
                         </a>
-                        <a href="#" className={styles.popoverGroupItems}>
+                        <a onClick={() => window.location.replace("/#contact")}  className={styles.popoverGroupItems}>
                             {"Contact"}
                         </a>
 
