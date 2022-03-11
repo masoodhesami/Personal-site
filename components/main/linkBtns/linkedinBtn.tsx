@@ -4,7 +4,7 @@ import linkedin from "../../../public/LinkedIn_logo_initials.svg";
 
 const LinkedinBtn = () => {
     return (
-        <a href="https://www.linkedin.com/in/masoud-hesami/" target={"_blank"}>
+        <a href="https://www.linkedin.com/in/masoud-hesami/" target={"_blank"} rel={"noreferrer"}>
             <button
                 className={styles.linkinBtnStyle}>
                 <img className={styles.linkinIcon} src={linkedin} alt="github"/>

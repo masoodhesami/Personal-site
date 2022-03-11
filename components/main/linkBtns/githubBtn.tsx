@@ -4,7 +4,7 @@ import github from "../../../public/github.svg";
 
 const GithubBtn = () => {
     return (
-        <a href="https://github.com/masoodhesami" target={"_blank"}>
+        <a href="https://github.com/masoodhesami" target={"_blank"} rel={"noreferrer"}>
             <button
                 className={styles.githubBtnStyle}>
                 <img className={styles.githubIcon} src={github} alt="github"/>

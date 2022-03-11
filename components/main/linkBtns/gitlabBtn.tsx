@@ -4,7 +4,7 @@ import gitlab from "../../../public/gitlab.svg";
 
 const GitlabBtn = () => {
     return (
-        <a href="https://gitlab.com/masoodhesami79" target={"_blank"}>
+        <a href="https://gitlab.com/masoodhesami79" target={"_blank"} rel={"noreferrer"}>
             <button
                 className={styles.gitlabBtnStyle}>
                 <img className={styles.gitlabIcon} src={gitlab} alt="github"/>
