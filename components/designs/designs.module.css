@@ -6,11 +6,11 @@
 }
 
 .designTemplatesGrid {
-    @apply grid lg:grid-cols-2 lg:w-2/3  mt-12  justify-items-center mx-auto sm:grid-cols-1 mb-8
+    @apply grid lg:grid-cols-2 lg:w-3/4  mt-12  justify-items-center mx-auto sm:grid-cols-1 gap-4
 }
 
 .designImages {
-    @apply w-11/12 h-full lg:w-full rounded-md border-l-4 border-orangeBorder hover:scale-105  duration-500
+    @apply w-11/12 h-full lg:w-11/12 rounded-md border-l-4 border-orangeBorder hover:scale-105  duration-500
 }
 
 .moreBtn {
@@ -20,7 +20,7 @@
 }
 
 .divFlexCenter {
-    @apply flex justify-center
+    @apply flex justify-center mt-12
 }
 
 .btnArrow {
