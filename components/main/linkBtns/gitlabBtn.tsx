@@ -4,10 +4,12 @@ import gitlab from "../../../public/gitlab.svg";
 
 const GitlabBtn = () => {
     return (
-        <button
-            className={styles.gitlabBtnStyle}>
-            <img className={styles.gitlabIcon} src={gitlab} alt="github"/>
-        </button>
+        <a href="https://gitlab.com/masoodhesami79" target={"_blank"}>
+            <button
+                className={styles.gitlabBtnStyle}>
+                <img className={styles.gitlabIcon} src={gitlab} alt="github"/>
+            </button>
+        </a>
     );
 };
 

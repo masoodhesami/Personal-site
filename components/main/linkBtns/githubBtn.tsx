@@ -4,10 +4,12 @@ import github from "../../../public/github.svg";
 
 const GithubBtn = () => {
     return (
-        <button
-            className={styles.githubBtnStyle}>
-            <img className={styles.githubIcon} src={github} alt="github"/>
-        </button>
+        <a href="https://github.com/masoodhesami" target={"_blank"}>
+            <button
+                className={styles.githubBtnStyle}>
+                <img className={styles.githubIcon} src={github} alt="github"/>
+            </button>
+        </a>
     );
 };
 

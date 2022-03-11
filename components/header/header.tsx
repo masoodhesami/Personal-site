@@ -22,7 +22,12 @@ const solutions = [
         href: '#about',
         icon: FingerPrintIcon,
     },
-    {name: 'Designs', description: "Your customers' data will be safe and secure.", href: '#designs', icon: LightBulbIcon},
+    {
+        name: 'Designs',
+        description: "Your customers' data will be safe and secure.",
+        href: '#designs',
+        icon: LightBulbIcon
+    },
     {
         name: 'Projects',
         description: "Connect with third-party tools that you're already using.",
@@ -38,6 +43,13 @@ const solutions = [
 ]
 
 export default function Header() {
+    function download() {
+        const URL = 'https://s22.picofile.com/d/8448275692/5577f027-7741-49f6-867b-79bbd1a3f0b4/MasoudHesami.pdf'
+        if (typeof window !== "undefined") {
+            window.location.href = URL
+        }
+    }
+
     return (
         <Popover className={styles.mainHeader}>
             <div className={styles.headerSetting}>
@@ -60,7 +72,7 @@ export default function Header() {
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className={styles.popoverGroup}>
-                        <a href="#" className={`${styles.popoverGroupItems } ${styles.popoverItemsActive}`}>
+                        <a href="#" className={`${styles.popoverGroupItems} ${styles.popoverItemsActive}`}>
                             {"Main"}
                         </a>
                         <a onClick={() => window.location.replace("/#about")} className={styles.popoverGroupItems}>
@@ -72,15 +84,15 @@ export default function Header() {
                         <a onClick={() => window.location.replace("/#projects")} className={styles.popoverGroupItems}>
                             {"Projects"}
                         </a>
-                        <a onClick={() => window.location.replace("/#contact")}  className={styles.popoverGroupItems}>
+                        <a onClick={() => window.location.replace("/#contact")} className={styles.popoverGroupItems}>
                             {"Contact"}
                         </a>
 
 
                     </Popover.Group>
                     <div className={styles.CVBtnDisplay}>
-                        <button
-                            className={styles.CVBtnStyle}>
+                        <button onClick={download}
+                                className={styles.CVBtnStyle}>
                             Download CV
                         </button>
                     </div>
@@ -122,8 +134,8 @@ export default function Header() {
                                     {solutions.map((item) => (
                                         <a onClick={() => window.location.replace(`/${item.href}`)}
                                            key={item.name}
-                                            href={item.href}
-                                            className={styles.popoverPanelItems}
+                                           href={item.href}
+                                           className={styles.popoverPanelItems}
                                         >
                                             <item.icon className={styles.popoverPanelIcons}
                                                        aria-hidden="true"/>
@@ -136,8 +148,8 @@ export default function Header() {
                         </div>
                         <div className="py-6 px-5 space-y-6">
                             <div>
-                                <button
-                                    className={styles.fullCVBtn}>
+                                <button onClick={download}
+                                        className={styles.fullCVBtn}>
                                     Download CV
                                 </button>
                             </div>
