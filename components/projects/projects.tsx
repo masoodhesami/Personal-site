@@ -4,17 +4,17 @@ import Card from "./card";
 import ProjectImg from "./projectImg";
 import ProjectMoreBtn from "./projectMoreBtn";
 
+import {projectsData} from "../../core/services/jsonFiles/projectsData.json"
+
 const Projects = () => {
     return (
         <>
             <ProjectImg/>
             <div className={styles.projectsGrid}>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+                {projectsData.map((data) => <div key={data.title}>
+                    <Card projectData={data}/>
+                </div>)}
+
             </div>
             <ProjectMoreBtn/>
         </>

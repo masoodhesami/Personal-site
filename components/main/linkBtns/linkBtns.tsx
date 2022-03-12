@@ -9,7 +9,7 @@ const LinkBtns = () => {
     return (
         <>
             <div className={styles.btnsDiv} id={'about'}>
-                <GithubBtn/>
+                <GithubBtn url={"https://github.com/masoodhesami"}/>
                 <GitlabBtn/>
                 <LinkedinBtn/>
             </div>

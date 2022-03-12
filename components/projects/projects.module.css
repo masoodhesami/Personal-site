@@ -35,7 +35,7 @@
     @apply mx-auto mt-20
 }
 .cardDetails{
-    @apply text-cardTitle/[.2] mt-2 mx-auto text-center text-sm
+    @apply text-cardTitle/[.5] mt-2 mx-auto text-center text-sm
 }
 .projectMoreBtn{
     @apply h-9 w-28 px-5 text-sm bg-transparent hover:bg-purple-600/[.17] text-gray-400
