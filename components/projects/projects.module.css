@@ -1,26 +1,40 @@
-.projectsGrid{
+.projectsGrid {
     @apply grid lg:grid-cols-2 lg:w-2/3 mt-16 gap-8 justify-items-center mx-auto sm:grid-cols-1 mb-8
 }
-.cardStyle{
-    @apply  max-w-sm bg-cardBackground rounded-md shadow-md
+
+.cardStyle {
+    @apply max-w-sm bg-cardBackground rounded-md shadow-md
 }
-.cardImageStyle{
+
+.cardImageStyle {
     @apply rounded-md
 }
-.cardTitleStyle{
+
+.cardTitleStyle {
     @apply mb-2 text-center text-xl font-bold tracking-tight text-cardTitle
     hover:text-xl hover:text-purple-400/[.8]
 }
-.cardBorderStyle{
+
+.cardBorderStyle {
     @apply border-t border-purple-600 w-52 mx-auto mt-2
 }
 
-.cardPurpleLine{
+.cardPurpleLine {
     @apply mx-auto relative -top-16
 }
-.techStyle{
+
+.techStyle {
     @apply mb-4 font-normal text-cardTitle/[.83] mt-8
 }
+
+.AtomOrange {
+    @apply text-atomOrange
+}
+
+.AtomBrown {
+    @apply text-atomBrown
+}
+
 .AtomGreen {
     @apply text-atomGreen
 }
@@ -28,16 +42,27 @@
 .AtomBlue {
     @apply text-atomBlue
 }
-.projectImgStyle{
+
+.AtomRed {
+    @apply text-atomRed
+}
+
+.AtomPurple {
+    @apply text-atomPurple
+}
+
+.projectImgStyle {
     width: 121px;
     height: 110px;
     background-image: url("../../public/projects.svg");
     @apply mx-auto mt-20
 }
-.cardDetails{
+
+.cardDetails {
     @apply text-cardTitle/[.5] mt-2 mx-auto text-center text-sm
 }
-.projectMoreBtn{
+
+.projectMoreBtn {
     @apply h-9 w-28 px-5 text-sm bg-transparent hover:bg-purple-600/[.17] text-gray-400
     bg-purple-600/[.15] font-semibold hover:text-white py-2 px-4 border border-purple-600
     rounded mb-12

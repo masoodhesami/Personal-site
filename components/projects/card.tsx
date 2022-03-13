@@ -2,7 +2,6 @@ import React from 'react';
 import styles from "./projects.module.css"
 import GithubBtn from "../main/linkBtns/githubBtn";
 import DemoBtn from "../main/linkBtns/demoBtn";
-import {stringify} from "querystring";
 
 interface IProps {
     projectData: {
@@ -10,12 +9,15 @@ interface IProps {
         detail: string,
         imgUrl: string,
         githubUrl: string,
-        viewUrl: string
+        viewUrl: string,
+        tags: {
+            name: String,
+            color: String
+        }[]
     }
 }
 
 const Card: React.FC<IProps> = ({projectData}) => {
-    console.log(projectData.imgUrl)
     return (
         <>
             <div
@@ -34,10 +36,13 @@ const Card: React.FC<IProps> = ({projectData}) => {
                         {projectData.detail}
                     </div>
                     <p className={styles.techStyle}>
-                        Technologies : <span className={styles.AtomBlue}>React Js</span> , <span
-                        className={styles.AtomGreen}>Node Js</span>
+                        Technologies:
+                        {projectData.tags.map((item) => <> /
+                            <span className={styles[`${item.color}`]}> {item.name} </span>
+                        </>)}
+
                     </p>
-                    <div className={"mt-3"}>
+                    <div className={"mt-6"}>
                         <GithubBtn url={projectData.githubUrl}/>
                         <DemoBtn url={projectData.viewUrl}/>
                     </div>

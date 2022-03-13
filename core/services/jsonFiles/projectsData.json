@@ -5,56 +5,160 @@
       "detail": "Sepehr Academy Project with React.js",
       "imgUrl": "https://s23.picofile.com/file/8448278092/sepehr.png",
       "githubUrl": "https://github.com/masoodhesami/Academy-project",
-      "viewUrl": "https://academy-project-kappa.vercel.app/"
+      "viewUrl": "https://academy-project-kappa.vercel.app/",
+      "tags": [
+        {
+          "name": "React.js",
+          "color": "AtomBlue"
+        },
+        {
+          "name": "Node.js",
+          "color": "AtomGreen"
+        },
+        {
+          "name": "Rest API",
+          "color": "AtomOrange"
+        }
+      ]
     },
     {
       "title": "Academy-admin-panel",
       "detail": "Sepehr Academy admin panel with CoreUi",
       "imgUrl": "https://s23.picofile.com/file/8448299818/panel.png",
       "githubUrl": "https://github.com/masoodhesami/Academy-admin-panel",
-      "viewUrl": "https://academy-panel-admin-chi.vercel.app/#/"
+      "viewUrl": "https://academy-panel-admin-chi.vercel.app/#/",
+      "tags": [
+        {
+          "name": "CoreUi",
+          "color": "AtomPurple"
+        },
+        {
+          "name": "React.js",
+          "color": "AtomBlue"
+        },
+        {
+          "name": "Node.js",
+          "color": "AtomGreen"
+        }
+      ]
     },
     {
       "title": "Personal-site",
       "detail": "Personal Site Design & Develop By Me",
       "imgUrl": "https://s22.picofile.com/file/8448300526/personal.png",
       "githubUrl": "https://github.com/masoodhesami/Personal-site",
-      "viewUrl": "https://personal-site-three-mu.vercel.app/"
+      "viewUrl": "https://personal-site-three-mu.vercel.app/",
+      "tags": [
+        {
+          "name": "Next.js",
+          "color": "AtomRed"
+        },
+        {
+          "name": "Typescript",
+          "color": "AtomBlue"
+        },
+        {
+          "name": "Tailwindcss",
+          "color": "AtomBrown"
+        }
+      ]
     },
     {
       "title": "Jwt-auth-with-custom-hook",
       "detail": "Authentication in React.js with custom hook",
       "imgUrl": "https://s22.picofile.com/file/8448300342/jwt.png",
       "githubUrl": "https://github.com/masoodhesami/Jwt-auth-with-custom-hook",
-      "viewUrl": ""
+      "viewUrl": "",
+      "tags": [
+        {
+          "name": "React.js",
+          "color": "AtomBlue"
+        },
+        {
+          "name": "Javascript",
+          "color": "AtomOrange"
+        },
+        {
+          "name": "Jwt-token",
+          "color": "AtomGreen"
+        }
+      ]
     },
     {
       "title": "Soundcloud-songs-downloader",
       "detail": "Download songs with soundcloud links",
       "imgUrl": "https://s23.picofile.com/file/8448300718/soundcloud.png",
       "githubUrl": "https://github.com/masoodhesami/Soundcloud-songs-downloader",
-      "viewUrl": "https://soundcloud-songs-downloader.vercel.app/"
+      "viewUrl": "https://soundcloud-songs-downloader.vercel.app/",
+      "tags": [
+        {
+          "name": "React.js",
+          "color": "AtomBlue"
+        },
+        {
+          "name": "Material Ui",
+          "color": "AtomPurple"
+        },
+        {
+          "name": "RapidApi",
+          "color": "AtomBrown"
+        }
+      ]
     },
     {
       "title": "React-socketio-chat-app",
       "detail": "React.js chat application with express & socketio",
       "imgUrl": "https://s22.picofile.com/file/8448301592/chatapp.png",
       "githubUrl": "https://github.com/masoodhesami/React-socketio-chat-app",
-      "viewUrl": ""
+      "viewUrl": "",
+      "tags": [
+        {
+          "name": "React.js",
+          "color": "AtomBlue"
+        },
+        {
+          "name": "Express.js",
+          "color": "AtomOrange"
+        },
+        {
+          "name": "Socket io",
+          "color": "AtomPurple"
+        }
+      ]
     },
     {
       "title": "Quiz-app",
       "detail": "React Js Quiz App Using Context",
       "imgUrl": "https://s23.picofile.com/file/8448302134/quiz.png",
       "githubUrl": "https://github.com/masoodhesami/Quiz-app",
-      "viewUrl": "https://quiz-app-xpo5.vercel.app/"
+      "viewUrl": "https://quiz-app-xpo5.vercel.app/",
+      "tags": [
+        {
+          "name": "React.js",
+          "color": "AtomBlue"
+        },
+        {
+          "name": "Context",
+          "color": "AtomBrown"
+        }
+      ]
     },
     {
       "title": "Transfer-list",
       "detail": "Transfer list using javascript",
       "imgUrl": "https://s22.picofile.com/file/8448302242/transfer_list.png",
       "githubUrl": "https://github.com/masoodhesami/Transfer-list",
-      "viewUrl": ""
+      "viewUrl": "",
+      "tags": [
+        {
+          "name": "Javascript",
+          "color": "AtomOrange"
+        },
+        {
+          "name": "HTML5",
+          "color": "AtomGreen"
+        }
+      ]
     }
   ]
 }
