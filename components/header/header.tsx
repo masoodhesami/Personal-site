@@ -44,7 +44,7 @@ const solutions = [
 
 export default function Header() {
     function download() {
-        const URL = 'https://s22.picofile.com/d/8448275692/5577f027-7741-49f6-867b-79bbd1a3f0b4/MasoudHesami.pdf'
+        const URL = 'https://storage.jjcloud.ir/records/files/uploads/documents/520ac6b2-e957-4d62-9fdd-ff6776c50731.pdf?requester=3133352e3134382e34302e313037&resource=613a333039313734363720753a32353037323337&from=6a6170616765&X-Amz-Content-Sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=oetSom924MQvtCRu9N6vvQ4bt8cG9HSpRnxWU756SyWy5NVt6nTpmfA9aV2b%2F20220316%2F%2Fs3%2Faws4_request&X-Amz-Date=20220316T152737Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=43da6a14fb18041e3de87c3bac982fc24ae1dbde236b0f43684999bbe669c632'
         if (typeof window !== "undefined") {
             window.location.href = URL
         }
