@@ -6,7 +6,6 @@ import {CodeIcon, FingerPrintIcon, HomeIcon, LightBulbIcon, MailIcon, MenuIcon, 
 
 // const [active , setActive] =useState(false)
 // const toggleClass = () => {
-//     // @ts-ignore
 //     setActive({ active: !active });
 // };
 const solutions = [
@@ -44,7 +43,7 @@ const solutions = [
 
 export default function Header() {
     function download() {
-        const URL = 'https://masoodhesami.ir/resume.pdf'
+        const URL = '/resume.pdf'
         if (typeof window !== "undefined") {
             window.location.href = URL
         }

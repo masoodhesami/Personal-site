@@ -1,17 +1,26 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
 import styles from "./projects.module.css"
 import Card from "./card";
 import ProjectImg from "./projectImg";
 import ProjectMoreBtn from "./projectMoreBtn";
 
-import {projectsData} from "../../core/services/jsonFiles/projectsData.json"
 
 const Projects = () => {
+    const [projects, setProjects] = useState([])
+    const fetchProjectsData = async () => {
+        const data = await axios.get("/api/projects");
+        setProjects(data.data);
+    }
+    useEffect(() => {
+        fetchProjectsData()
+    }, []);
+
     return (
         <>
             <ProjectImg/>
             <div className={styles.projectsGrid}>
-                {projectsData.map((data) => <div key={data.title}>
+                {projects.map((data, index) => <div key={index}>
                     <Card projectData={data}/>
                 </div>)}
 
