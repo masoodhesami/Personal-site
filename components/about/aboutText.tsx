@@ -5,18 +5,16 @@ const AboutText = () => {
     return (
         <>
             <div className={styles.aboutText}>
-                I am <span className={styles.AtomOrange}>21</span> years old and <span
-                className={styles.AtomBrown}>born</span> in the <span className={styles.AtomGreen}>north</span>.
-                I started learning <span className={styles.AtomRed}>Python</span> in <span
-                className={styles.AtomOrange}> 2020 </span>
-                and later became interested in <span className={styles.AtomRed}> JavaScript</span>. And from there, my
-                career as a <span className={styles.AtomBlue}>Front-end
-            developer</span> began with learning <span className={styles.AtomBlue}> React </span> . Im a <span
-                className={styles.AtomGreen}> student </span> of computer engineering and I
-                am interested in working in <span className={styles.AtomPurple}> ux </span> & <span
-                className={styles.AtomPurple}> ui </span> design & <span
-                className={styles.AtomOrange}> coding </span> in
-                Front.
+                Ever since I can <span className={styles.AtomBlue}>remember</span> I was kind of
+                person who <span className={styles.AtomOrange}>enjoyed</span> to
+                know more
+                about the <span className={styles.AtomGreen}>world</span> around me and nowadays my <span
+                className={styles.AtomGreen}>world</span> is summed up in the word <span
+                className={styles.AtomPurple}>Web</span>.
+                The more <span className={styles.AtomRed}>time</span> passes, the more I <span
+                className={styles.AtomBlue}>touch</span> the spirit of this system <span
+                className={styles.AtomBrown}>and</span> progress
+                in this field means progress in <span className={styles.AtomGreen}>life</span> for me 🪐
             </div>
             <div id={'designs'}>
             </div>
