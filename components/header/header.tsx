@@ -44,7 +44,7 @@ const solutions = [
 
 export default function Header() {
     function download() {
-        const URL = 'https://masoudhesami.vercel.app/resume.pdf'
+        const URL = 'https://masoodhesami.ir/resume.pdf'
         if (typeof window !== "undefined") {
             window.location.href = URL
         }
