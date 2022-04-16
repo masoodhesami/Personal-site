@@ -1,0 +1,15 @@
+.image404{
+    width: 450px;
+    height: 450px;
+    background-image: url("../../public/404-error.svg");
+    background-repeat: no-repeat;
+    @apply mx-auto mt-16
+}
+.btn404style{
+    @apply h-10 w-48 px-5 text-sm bg-transparent hover:bg-skyBlue/[.17] text-white
+    bg-skyBlue/[.15] font-semibold hover:text-skyDarkBlue py-2 px-4 border border-skyBlue
+    rounded mr-2
+}
+.btnGrid{
+    @apply mx-auto flex justify-center -mt-3
+}
