@@ -159,6 +159,27 @@
           "color": "AtomGreen"
         }
       ]
+    },
+    {
+      "title": "Rightel-web",
+      "detail": "Rightel website using chakra-ui",
+      "imgUrl": "https://s25.picofile.com/file/8451890134/rightel_screen.png",
+      "githubUrl": "https://github.com/masoodhesami/Rightel-web",
+      "viewUrl": "https://rightel.vercel.app/",
+      "tags": [
+        {
+          "name": "React.js",
+          "color": "AtomBlue"
+        },
+        {
+          "name": "Chakra Ui",
+          "color": "AtomGreen"
+        },
+        {
+          "name": "Cypress",
+          "color": "AtomPurple"
+        }
+      ]
     }
   ]
 }
