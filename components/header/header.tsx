@@ -46,9 +46,6 @@ export default function Header() {
             window.location.href = URL
         }
     }
-    const handleClick = (e: any) => {
-        e.currentTarget.classList.toggle(styles.popoverItemsActive);
-    };
 
     return (
         <Popover className={styles.mainHeader}>
@@ -72,8 +69,8 @@ export default function Header() {
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className={styles.popoverGroup}>
-                        {solutions.map(item =>
-                            <a href={`${item.href}`} onClick={() => setActive(item.name)}
+                        {solutions.map((item,index) =>
+                            <a key={index} href={`${item.href}`} onClick={() => setActive(item.name)}
                                 className={`${styles.popoverGroupItems} ${active == item.name && styles.popoverItemsActive}`}>
                                 {`${item.name}`}
                             </a>)}
@@ -120,9 +117,9 @@ export default function Header() {
                             </div>
                             <div className="mt-6">
                                 <nav className={styles.navGrid}>
-                                    {solutions.map((item) => (
+                                    {solutions.map((item,index) => (
                                         <a onClick={() => window.location.replace(`/${item.href}`)}
-                                            key={item.name}
+                                            key={index}
                                             href={item.href}
                                             className={styles.popoverPanelItems}
                                         >

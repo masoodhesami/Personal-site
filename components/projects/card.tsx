@@ -17,14 +17,14 @@ interface IProps {
     }
 }
 
-const Card: React.FC<IProps> = ({projectData}) => {
+const Card: React.FC<IProps> = ({ projectData }) => {
     return (
         <>
             <div
                 className={styles.cardStyle}>
                 <a href={projectData.viewUrl} target={"_blank"} rel={"noreferrer"}>
                     <img className={styles.cardImageStyle} width={400} height={200}
-                         src={projectData.imgUrl} alt="alt"/>
+                        src={projectData.imgUrl} alt="alt" />
                 </a>
                 <div className="p-3">
                     <a href={projectData.githubUrl} target={"_blank"} rel={"noreferrer"}>
@@ -37,14 +37,15 @@ const Card: React.FC<IProps> = ({projectData}) => {
                     </div>
                     <p className={styles.techStyle}>
                         Technologies:
-                        {projectData.tags.map((item) => <> /
-                            <span className={styles[`${item.color}`]}> {item.name} </span>
-                        </>)}
+                        {projectData.tags.map((item, index) => <span key={index}> /
+                            <span className={styles[`${item.color}`]}>  {item.name} </span>
+                        </span>
+                        )}
 
                     </p>
                     <div className={"mt-6"}>
-                        <GithubBtn url={projectData.githubUrl}/>
-                        <DemoBtn url={projectData.viewUrl}/>
+                        <GithubBtn url={projectData.githubUrl} />
+                        <DemoBtn url={projectData.viewUrl} />
                     </div>
                 </div>
             </div>
