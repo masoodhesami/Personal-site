@@ -1,13 +1,9 @@
-import {Fragment, useState} from 'react'
-import {Popover, Transition} from '@headlessui/react'
+import { Fragment, useState } from 'react'
+import { Popover, Transition } from '@headlessui/react'
 import image from "../../public/threedots.svg"
 import styles from "./header.module.css"
-import {CodeIcon, FingerPrintIcon, HomeIcon, LightBulbIcon, MailIcon, MenuIcon, XIcon} from '@heroicons/react/outline'
+import { CodeIcon, FingerPrintIcon, HomeIcon, LightBulbIcon, MailIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
-// const [active , setActive] =useState(false)
-// const toggleClass = () => {
-//     setActive({ active: !active });
-// };
 const solutions = [
     {
         name: 'Main',
@@ -42,12 +38,17 @@ const solutions = [
 ]
 
 export default function Header() {
+    const [active, setActive] = useState("")
+
     function download() {
         const URL = '/resume.pdf'
         if (typeof window !== "undefined") {
             window.location.href = URL
         }
     }
+    const handleClick = (e: any) => {
+        e.currentTarget.classList.toggle(styles.popoverItemsActive);
+    };
 
     return (
         <Popover className={styles.mainHeader}>
@@ -58,8 +59,8 @@ export default function Header() {
                         <a href="#">
                             <span className="sr-only">ThreeDots</span>
                             <img className={styles.logoImage}
-                                 src={image}
-                                 alt="ThreeDots"
+                                src={image}
+                                alt="ThreeDots"
                             />
                         </a>
                     </div>
@@ -67,31 +68,20 @@ export default function Header() {
                         <Popover.Button
                             className={styles.popoverSetting}>
                             <span className="sr-only">Open menu</span>
-                            <MenuIcon className="h-6 w-6" aria-hidden="true"/>
+                            <MenuIcon className="h-6 w-6" aria-hidden="true" />
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className={styles.popoverGroup}>
-                        <a href="#" className={`${styles.popoverGroupItems} ${styles.popoverItemsActive}`}>
-                            {"Main"}
-                        </a>
-                        <a onClick={() => window.location.replace("/#about")} className={styles.popoverGroupItems}>
-                            {"About"}
-                        </a>
-                        <a onClick={() => window.location.replace("/#designs")} className={styles.popoverGroupItems}>
-                            {"Designs"}
-                        </a>
-                        <a onClick={() => window.location.replace("/#projects")} className={styles.popoverGroupItems}>
-                            {"Projects"}
-                        </a>
-                        <a onClick={() => window.location.replace("/#contact")} className={styles.popoverGroupItems}>
-                            {"Contact"}
-                        </a>
-
+                        {solutions.map(item =>
+                            <a href={`${item.href}`} onClick={() => setActive(item.name)}
+                                className={`${styles.popoverGroupItems} ${active == item.name && styles.popoverItemsActive}`}>
+                                {`${item.name}`}
+                            </a>)}
 
                     </Popover.Group>
                     <div className={styles.CVBtnDisplay}>
                         <button onClick={download}
-                                className={styles.CVBtnStyle}>
+                            className={styles.CVBtnStyle}>
                             Download CV
                         </button>
                     </div>
@@ -108,7 +98,7 @@ export default function Header() {
                 leaveTo="opacity-0 scale-95"
             >
                 <Popover.Panel focus
-                               className={styles.popoverPanelDisplay}>
+                    className={styles.popoverPanelDisplay}>
                     <div
                         className={styles.popoverPanelSetting}>
                         <div className="pt-5 pb-6 px-5">
@@ -124,7 +114,7 @@ export default function Header() {
                                     <Popover.Button
                                         className={styles.popoverCloseBtn}>
                                         <span className="sr-only">Close menu</span>
-                                        <XIcon className="h-6 w-6" aria-hidden="true"/>
+                                        <XIcon className="h-6 w-6" aria-hidden="true" />
                                     </Popover.Button>
                                 </div>
                             </div>
@@ -132,12 +122,12 @@ export default function Header() {
                                 <nav className={styles.navGrid}>
                                     {solutions.map((item) => (
                                         <a onClick={() => window.location.replace(`/${item.href}`)}
-                                           key={item.name}
-                                           href={item.href}
-                                           className={styles.popoverPanelItems}
+                                            key={item.name}
+                                            href={item.href}
+                                            className={styles.popoverPanelItems}
                                         >
                                             <item.icon className={styles.popoverPanelIcons}
-                                                       aria-hidden="true"/>
+                                                aria-hidden="true" />
                                             <span
                                                 className={styles.popoverPanelTexts}>{item.name}</span>
                                         </a>
@@ -148,7 +138,7 @@ export default function Header() {
                         <div className="py-6 px-5 space-y-6">
                             <div>
                                 <button onClick={download}
-                                        className={styles.fullCVBtn}>
+                                    className={styles.fullCVBtn}>
                                     Download CV
                                 </button>
                             </div>
