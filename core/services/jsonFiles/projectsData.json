@@ -180,6 +180,23 @@
           "color": "AtomPurple"
         }
       ]
+    },
+    {
+      "title": "Terminal-project",
+      "detail": "CV project with terminal behaviour",
+      "imgUrl": "https://s25.picofile.com/file/8455088668/Screenshot_2022_11_04_at_12_29_32_React_App.png",
+      "githubUrl": "https://github.com/masoodhesami/Terminal-project",
+      "viewUrl": "https://terminal-project-three.vercel.app/",
+      "tags": [
+        {
+          "name": "React.js",
+          "color": "AtomBlue"
+        },
+        {
+          "name": "Javascript",
+          "color": "AtomGreen"
+        }
+      ]
     }
   ]
 }
